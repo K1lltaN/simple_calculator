@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1c0202;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    max-width: 300px;
+    margin: auto;
+    background-color: #d4d2cd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display {
+    grid-column: span 4;
+    background: #eee;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.5em;
+    overflow: hidden;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background: #e4820b;
+    border-radius: 20px;
+  }
+  
+  button:active {
+    background: #ddd;
+  }
+  
+  /* Стили для операторов (+, -, *, /) */
+  button.operator {
+    background: #f59b23;
+    color: #fff;
+  }
+  
+  button.operator:active {
+    background: #d9861e;
+  }
+  
